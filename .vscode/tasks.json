@@ -1,10 +1,13 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
     "version": "0.1.0",
-    "command": "explorer",
-    "windows": {
-        "command": "explorer.exe"
-    },
-    "args": ["${file}"]
+    "command": "gulp",
+    "isShellCommand": true,
+    "args": [
+        "--no-color"
+    ],
+    "tasks": [{
+        "taskName": "webserver",
+        "isBuildCommand": true,
+        "showOutput": "always"
+    }]
 }
