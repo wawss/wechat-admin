@@ -1,16 +1,17 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-    <link href="../../../content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <style>
         * {
             margin: 0;
             padding: 0;
             list-style-type: none;
         }
-
+        
         .iphone-model {
             width: 320px;
             height: 550px;
@@ -18,11 +19,11 @@
             position: relative;
             float: left;
         }
-
+        
         .head-bg {
             width: 100%;
         }
-
+        
         .menu {
             position: absolute;
             left: 0;
@@ -31,72 +32,89 @@
             border-top: 1px solid #aaaaaa;
             width: 100%;
         }
-
-            .menu > ul > li {
-                float: left;
-                width: 33%;
-                text-align: center;
-                line-height: 50px;
-                border-right: 1px solid #aaaaaa;
-                cursor: pointer;
-                position: relative;
-            }
-
-                .menu > ul > li:last-child {
-                    width: 34%;
-                    border-right: none;
-                }
-
+        
+        .menu>ul>li {
+            float: left;
+            width: 33%;
+            text-align: center;
+            line-height: 50px;
+            border-right: 1px solid #aaaaaa;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .menu>ul>li:last-child {
+            width: 34%;
+            border-right: none;
+        }
+        
         .sub-menu {
             position: absolute;
             width: 90%;
             left: 5%;
             bottom: 140%;
         }
-
-            .sub-menu li {
-                border-top: 1px solid #aaaaaa;
-                border-left: 1px solid #aaaaaa;
-                border-right: 1px solid #aaaaaa;
-                height: 40px;
-                line-height: 40px;
-                font-size: 13px;
-            }
-
-                .sub-menu li:first-child {
-                    border-top-left-radius: 3px;
-                    border-top-right-radius: 3px;
-                }
-
-                .sub-menu li:last-child {
-                    border-bottom-left-radius: 3px;
-                    border-bottom-right-radius: 3px;
-                    border-bottom: 1px solid #aaaaaa;
-                }
-
+        
+        .sub-menu li {
+            border-top: 1px solid #aaaaaa;
+            border-left: 1px solid #aaaaaa;
+            border-right: 1px solid #aaaaaa;
+            height: 40px;
+            line-height: 40px;
+            font-size: 13px;
+        }
+        
+        .sub-menu li:first-child {
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+        
+        .sub-menu li:last-child {
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            border-bottom: 1px solid #aaaaaa;
+        }
+        
         .contents {
             float: left;
             margin-left: 70px;
             width: 600px;
         }
-
-            .contents ul>li div {
-                margin-bottom: 15px; float:left;
-                height:36px; line-height:35px;
-            }
-            .contents>ul>li{ clear:both; overflow:hidden;}
-            .msg-type{ height:350px;}
-            .save-btn-debug,.save-btn-release{ margin-left:20px;}
-            .menu-input{ width:400px;}
+        
+        .contents ul>li div {
+            margin-bottom: 15px;
+            float: left;
+            height: 36px;
+            line-height: 35px;
+        }
+        
+        .contents>ul>li {
+            clear: both;
+            overflow: hidden;
+        }
+        
+        .msg-type {
+            height: 350px;
+        }
+        
+        .save-btn-debug,
+        .save-btn-release {
+            margin-left: 20px;
+        }
+        
+        .menu-input {
+            width: 400px;
+        }
     </style>
 </head>
+
 <body>
     <div id="page-title">
         <h2 style="color:#414C59;">自定义菜单</h2>
         <p style="color:#3e4855;font-family:Raleway,'Helvetica Neue',Helvetica,Arial,sans-serif; opacity:0.6;">填写自定义菜单，提交成功后需取关公众号再关注后生效</p>
 
         <div class="iphone-model">
-            <img src="../../../content/image/iphone-head-bg.png" class="head-bg" />
+            <img src="../../../content/images/iphone-head-bg.png" class="head-bg" />
             <div class="menu">
                 <ul>
                     <li>
@@ -177,4 +195,5 @@
         </div>
     </div>
 </body>
+
 </html>
