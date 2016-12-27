@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link href="content/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+    <link href="content/css/index.css" rel="stylesheet" />
+    <script>
+        var v = document.documentElement.clientHeight;
+        console.log(v);
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="head">
+            <div class="head-logo"></div>
+        </div>
+        <div class="menu">
+            <div class="menu-warp" style="position:absolute; left:0;top:0; width:100%; margin-top:78px;">
+                <ul class="menu-item">
+                    <li>
+                        <div>客户商</div>
+                        <ul class="item-sub-menu">
+                            <li>
+                                <div class="item-sub-parentname">
+                                    <i class="menu-icon glyphicon glyphicon-asterisk"></i>
+                                    <span>客户商列表</span>
+                                    <i class="menu-open-icon glyphicon glyphicon-chevron-right"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-sub-parentname">
+                                    <i class="menu-icon glyphicon glyphicon-asterisk"></i>
+                                    <span>添加新客户商</span>
+                                    <i class="menu-open-icon glyphicon glyphicon-chevron-right"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>微信公众号管理</div>
+                        <ul class="item-sub-menu">
+                            <li>
+                                <div class="item-sub-parentname">
+                                    <i class="menu-icon glyphicon glyphicon-asterisk"></i>
+                                    <span>已有公众号</span>
+                                    <i class="menu-open-icon glyphicon glyphicon-chevron-right"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-sub-parentname">
+                                    <i class="menu-icon glyphicon glyphicon-asterisk"></i>
+                                    <span>添加新公众号</span>
+                                    <i class="menu-open-icon glyphicon glyphicon-chevron-right"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>微信公众号后台营销管理</div>
+                        <ul class="item-sub-menu">
+                            <li>
+                                <div class="item-sub-parentname">
+                                    <i class="menu-icon glyphicon glyphicon-asterisk"></i>
+                                    <span>基础功能设置</span>
+                                    <i class="menu-open-icon glyphicon glyphicon-chevron-right"></i>
+                                </div>
+                                <ul class="last-sub-menu">
+                                    <li class="last-sub-menu-item">
+                                        <i class="menu-icon-item glyphicon glyphicon-unchecked"></i>
+                                        <span>自定义菜单</span>
+                                    </li>
+                                    <li class="last-sub-menu-item">
+                                        <i class="menu-icon-item glyphicon glyphicon-unchecked"></i>
+                                        <span>素材库</span>
+                                    </li>
+                                    <li class="last-sub-menu-item">
+                                        <i class="menu-icon-item glyphicon glyphicon-unchecked"></i>
+                                        <span>生成渠道二维码</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="item-sub-parentname">
+                                    <i class="menu-icon glyphicon glyphicon-user"></i>
+                                    <span>用户信息管理</span>
+                                    <i class="menu-open-icon glyphicon glyphicon-chevron-right"></i>
+                                </div>
+                                <ul class="last-sub-menu">
+
+                                    <li class="last-sub-menu-item">
+                                        <i class="menu-icon-item glyphicon glyphicon-unchecked"></i>
+                                        <span>粉丝管理</span>
+                                    </li>
+                                    <li class="last-sub-menu-item">
+                                        <i class="menu-icon-item glyphicon glyphicon-unchecked"></i>
+                                        <span>用户分组</span>
+                                    </li>
+                                    <li class="last-sub-menu-item">
+                                        <i class="menu-icon-item glyphicon glyphicon-unchecked"></i>
+                                        <span>标签管理</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="item-sub-parentname">
+                                    <i class="menu-icon glyphicon glyphicon-envelope"></i>
+                                    <span>消息管理</span>
+                                    <i class="menu-open-icon glyphicon glyphicon-chevron-right"></i>
+                                </div>
+                                <ul class="last-sub-menu">
+                                    <li class="last-sub-menu-item">
+                                        <i class="menu-icon-item glyphicon glyphicon-unchecked"></i>
+                                        <span>关注回复</span>
+                                    </li>
+                                    <li class="last-sub-menu-item">
+                                        <i class="menu-icon-item glyphicon glyphicon-unchecked"></i>
+                                        <span>关键词回复</span>
+                                    </li>
+                                    <li class="last-sub-menu-item">
+                                        <i class="menu-icon-item glyphicon glyphicon-unchecked"></i>
+                                        <span>群发消息</span>
+                                    </li>
+                                    <li class="last-sub-menu-item">
+                                        <i class="menu-icon-item glyphicon glyphicon-unchecked"></i>
+                                        <span>模板消息</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="item-sub-parentname">
+                                    <i class="menu-icon glyphicon glyphicon-signal"></i>
+                                    <span>统计管理</span>
+                                    <i class="menu-open-icon glyphicon glyphicon-chevron-right"></i>
+                                </div>
+                                <ul class="last-sub-menu">
+                                    <li class="last-sub-menu-item">
+                                        <i class="menu-icon-item glyphicon glyphicon-unchecked"></i>
+                                        <span>渠道统计</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="item-sub-parentname">
+                                    <i class="menu-icon glyphicon glyphicon-signal"></i>
+                                    <span>统计管理</span>
+                                    <i class="menu-open-icon glyphicon glyphicon-chevron-right"></i>
+                                </div>
+                                <ul class="last-sub-menu">
+                                    <li class="last-sub-menu-item">
+                                        <i class="menu-icon-item glyphicon glyphicon-unchecked"></i>
+                                        <span>渠道统计</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="page-wrapper">
+            <div class="page-content">
+                <iframe src="module/wechat/subscribe/edit.html" style="width:100%; border:none; height:100px;" frameborder="0" scrolling="no" id="ifrm"></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="content/js/jquery.js"></script>
+    <script src="content/js/jquery.mCustomScrollbar.min.js"></script>
+    <script>
+        $(function() {
+            function autoIframeHeight() {
+                var height = $("#ifrm")[0].contentWindow.document.body.scrollHeight;
+                $("#ifrm").height(height);
+            }
+
+            function autoMenuHeight() {
+                var menuHeight = $(".menu").height();
+                $(".menu-warp").height(menuHeight);
+            }
+            window.onresize = function() {
+                autoMenuHeight();
+                autoIframeHeight();
+            }
+
+            autoMenuHeight();
+            $("#ifrm").on("load", autoIframeHeight);
+
+            $(".menu-warp").mCustomScrollbar();
+            $(".item-sub-parentname").click(function() {
+                if ($(this).data("open") == 1) {
+                    $(this).removeClass("active").data("open", 0);
+                } else {
+                    $(this).addClass("active").data("open", 1);
+                }
+                $(this).siblings(".last-sub-menu").stop().slideToggle(300);
+            });
+        });
+    </script>
+</body>
+
+</html>

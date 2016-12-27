@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="../../../content/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            outline:none;
+        }
+        .hide{ display:none;}
+        .nav-contents{ padding:10px;}
+        .ctx-txt{ width:500px; height:300px; padding:10px;}
+    </style>
+</head>
+<body>
+    <div id="page-title">
+        <h2 style="color:#414C59;">关注回复</h2>
+        <p style="color:#3e4855;font-family:Raleway,'Helvetica Neue',Helvetica,Arial,sans-serif; opacity:0.6;">可选择回复类型</p>
+        <div style="min-height:400px;">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation"><a href="#">文字</a></li>
+                <li role="presentation" class="active"><a href="#">图文</a></li>
+                <li role="presentation"><a href="#">图片</a></li>
+                <li role="presentation"><a href="#">语音</a></li>
+                <li role="presentation"><a href="#">视频</a></li>
+            </ul>
+            <ul class="nav-contents">
+                <li class="hide">
+                    <textarea class="ctx-txt">1111111111111</textarea>
+                </li>
+                <li class="hide">
+                    <textarea class="ctx-txt">1111111111111</textarea>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <input type="button" class="btn btn-primary btn-lg save-btn-debug" value="保存数据" />
+        </div>
+    </div>
+</body>
+</html>

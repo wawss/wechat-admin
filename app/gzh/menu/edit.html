@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="../../../content/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .iphone-model {
+            width: 320px;
+            height: 550px;
+            border: 1px solid #aaaaaa;
+            position: relative;
+            float: left;
+        }
+
+        .head-bg {
+            width: 100%;
+        }
+
+        .menu {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 50px;
+            border-top: 1px solid #aaaaaa;
+            width: 100%;
+        }
+
+            .menu > ul > li {
+                float: left;
+                width: 33%;
+                text-align: center;
+                line-height: 50px;
+                border-right: 1px solid #aaaaaa;
+                cursor: pointer;
+                position: relative;
+            }
+
+                .menu > ul > li:last-child {
+                    width: 34%;
+                    border-right: none;
+                }
+
+        .sub-menu {
+            position: absolute;
+            width: 90%;
+            left: 5%;
+            bottom: 140%;
+        }
+
+            .sub-menu li {
+                border-top: 1px solid #aaaaaa;
+                border-left: 1px solid #aaaaaa;
+                border-right: 1px solid #aaaaaa;
+                height: 40px;
+                line-height: 40px;
+                font-size: 13px;
+            }
+
+                .sub-menu li:first-child {
+                    border-top-left-radius: 3px;
+                    border-top-right-radius: 3px;
+                }
+
+                .sub-menu li:last-child {
+                    border-bottom-left-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                    border-bottom: 1px solid #aaaaaa;
+                }
+
+        .contents {
+            float: left;
+            margin-left: 70px;
+            width: 600px;
+        }
+
+            .contents ul>li div {
+                margin-bottom: 15px; float:left;
+                height:36px; line-height:35px;
+            }
+            .contents>ul>li{ clear:both; overflow:hidden;}
+            .msg-type{ height:350px;}
+            .save-btn-debug,.save-btn-release{ margin-left:20px;}
+            .menu-input{ width:400px;}
+    </style>
+</head>
+<body>
+    <div id="page-title">
+        <h2 style="color:#414C59;">自定义菜单</h2>
+        <p style="color:#3e4855;font-family:Raleway,'Helvetica Neue',Helvetica,Arial,sans-serif; opacity:0.6;">填写自定义菜单，提交成功后需取关公众号再关注后生效</p>
+
+        <div class="iphone-model">
+            <img src="../../../content/image/iphone-head-bg.png" class="head-bg" />
+            <div class="menu">
+                <ul>
+                    <li>
+                        <span>我的会员</span>
+                        <ul class="sub-menu">
+                            <li>订单中心</li>
+                            <li>消费积分</li>
+                            <li>修改资料</li>
+                            <li>我的等级</li>
+                            <li>绑定手机号</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>社区福利</span>
+                        <ul class="sub-menu">
+                            <li>订单中心</li>
+                            <li>消费积分</li>
+                            <li>修改资料</li>
+                            <li>我的等级</li>
+                            <li>绑定手机号</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>在线帮助</span>
+                        <ul class="sub-menu">
+                            <li>订单中心</li>
+                            <li>消费积分</li>
+                            <li>修改资料</li>
+                            <li>我的等级</li>
+                            <li>绑定手机号</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contents">
+            <ul>
+                <li>
+                    <div>菜单名称：</div>
+                    <div><input type="text" class="form-control menu-input" /></div>
+                </li>
+                <li>
+                    <div>菜单类型：</div>
+                    <div>
+                        <select class="form-control menu-input">
+                            <option>链接</option>
+                            <option>响应消息</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div>链接地址：</div>
+                    <div>
+                        <div><input type="text" class="form-control menu-input" /></div>
+                    </div>
+                </li>
+                <li class="msg-type">
+                    <div>消息类型：</div>
+                    <div>
+                        <ul class="nav nav-tabs  menu-input" role="tablist">
+                            <li role="presentation"><a href="#">文字</a></li>
+                            <li role="presentation" class="active"><a href="#">图文</a></li>
+                            <li role="presentation"><a href="#">图片</a></li>
+                            <li role="presentation"><a href="#">语音</a></li>
+                            <li role="presentation"><a href="#">视频</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div></div>
+                    <div>
+                        <input type="button" class="btn btn-primary btn-lg save-btn-debug" value="保存暂不发布" />
+                        <input type="button" class="btn btn-success btn-lg save-btn-release" value="保存并且发布" />
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
