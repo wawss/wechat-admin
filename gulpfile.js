@@ -9,3 +9,4 @@ gulp.task('webserver', function() {
             open: true
         }));
 });
+gulp.task('default', ['webserver']);

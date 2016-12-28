@@ -20,7 +20,7 @@
         <h2 style="color:#414C59;">添加新公众号</h2>
         <p style="color:#3e4855;font-family:Raleway,'Helvetica Neue',Helvetica,Arial,sans-serif; opacity:0.6;">填写下面的表单来添加新公众号，提交成功后系统会自动分配开发者模式token</p>
     </div>
-    <div class="panel">
+    <div class="panel" id="v-ctl">
         <form class="form-horizontal bordered-row" id="demo-form" data-parsley-validate="" novalidate="">
             <div class="row">
                 <div class="col-md-6">
@@ -104,10 +104,13 @@
                 </div>
             </div>
             <div class="bg-default content-box text-center pad20A mrg25T">
-                <button class="btn btn-lg btn-primary">提交数据</button>
+                <input type="button" class="btn btn-lg btn-primary" v-on:click="save" value="提交数据" />
             </div>
         </form>
     </div>
+
+    <script src="/node_modules/vue/dist/vue.js"></script>
+    <script src="../../app-controllers/cus/edit.js"></script>
 </body>
 
 </html>
