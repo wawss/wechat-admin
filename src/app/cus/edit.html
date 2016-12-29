@@ -12,6 +12,10 @@
             border: 1px solid #dfdff1;
             border-radius: 3px;
         }
+        
+        .row {
+            margin: 0;
+        }
     </style>
 </head>
 
@@ -27,14 +31,14 @@
                     <div class="form-group">
                         <label class="col-sm-3 control-label">公众号名称</label>
                         <div class="col-sm-6">
-                            <input type="text" placeholder="公众号名称" required="" class="form-control">
+                            <input type="text" placeholder="公众号名称" v-model="gzh.gzhName" required="" class="form-control">
                             <ul class="parsley-errors-list"></ul>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-3 control-label">公众号类型</label>
                         <div class="col-sm-6">
-                            <select class="form-control">
+                            <select class="form-control" v-model="gzh.gzhType">
                                 <option value="服务号">服务号</option>
                                 <option value="订阅号">订阅号</option>
                             </select>
@@ -44,21 +48,21 @@
                     <div class="form-group">
                         <label class="col-sm-3 control-label">公众号原始ID</label>
                         <div class="col-sm-6">
-                            <input type="text" data-parsley-minlength="6" placeholder="公众号原始ID" required="" class="form-control">
+                            <input type="text" data-parsley-minlength="6" placeholder="公众号原始ID" v-model="gzh.gzhID" required="" class="form-control">
                             <ul class="parsley-errors-list"></ul>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-3 control-label">AppID</label>
                         <div class="col-sm-6">
-                            <input type="text" data-parsley-maxlength="6" placeholder="AppID" required="" class="form-control">
+                            <input type="text" data-parsley-maxlength="6" placeholder="AppID" v-model="gzh.gzhAppID" required="" class="form-control">
                             <ul class="parsley-errors-list"></ul>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-3 control-label">AppSecret</label>
                         <div class="col-sm-6">
-                            <input type="text" data-parsley-range="[5,10]" placeholder="AppSecret" required="" class="form-control">
+                            <input type="text" data-parsley-range="[5,10]" placeholder="AppSecret" v-model="gzh.gzhAppSecret" required="" class="form-control">
                             <ul class="parsley-errors-list"></ul>
                         </div>
                     </div>
@@ -98,6 +102,7 @@
                         <label class="col-sm-3 control-label">公众号logo</label>
                         <div class="col-sm-6">
                             <input type="file" class="form-control" />
+                            <input type="hidden" v-model="gzh.gzhLogoURL" />
                             <ul class="parsley-errors-list"></ul>
                         </div>
                     </div>
