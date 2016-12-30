@@ -1,3 +1,5 @@
+'use strict';
+
 var vm = new Vue({
     el: '#v-ctl',
     data: {
@@ -11,9 +13,9 @@ var vm = new Vue({
         }
     },
     methods: {
-        save: function() {
+        save: function save() {
             console.log(JSON.stringify(this.gzh));
         }
     }
 });
-let a = 1;
+var a = 1;
