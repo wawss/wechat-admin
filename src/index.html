@@ -10,7 +10,7 @@
     <script>
         var v = document.documentElement.clientHeight;
         console.log(v);
-    </script>*-
+    </script>
 </head>
 
 <body>
@@ -164,30 +164,42 @@
 
         <div class="page-wrapper">
             <div class="page-content">
-                <iframe src="app/gzh/subscribe/edit.html" style="width:100%; border:none; height:100px;" frameborder="0" scrolling="no" id="ifrm"></iframe>
+                <iframe src="app/cus/edit.html" style="width:100%; border:none; " frameborder="0" scrolling="no" id="ifrm" onload="autoIframeHeight()"></iframe>
             </div>
         </div>
     </div>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="content/plugins/jquery.mCustomScrollbar/jquery.mCustomScrollbar.min.js"></script>
     <script>
-        $(function() {
-            function autoIframeHeight() {
-                var height = $("#ifrm")[0].contentWindow.document.body.scrollHeight;
-                $("#ifrm").height(height);
+        function autoIframeHeight() {
+            var ifm = document.getElementById("ifrm");
+            var subWeb = document.frames ? document.frames["ifrm"].document : ifm.contentDocument;
+            if (ifm != null && subWeb != null) {
+                ifm.height = subWeb.body.scrollHeight;
             }
-
+        }
+        $(function() {
             function autoMenuHeight() {
                 var menuHeight = $(".menu").height();
                 $(".menu-warp").height(menuHeight);
             }
+
             window.onresize = function() {
                 autoMenuHeight();
                 autoIframeHeight();
             }
 
             autoMenuHeight();
-            $("#ifrm").on("load", autoIframeHeight);
+
+            // var stl = setInterval(function() {
+            //     var h = $("#ifrm").height;
+            //     if (h == 0) {
+            //         autoIframeHeight();
+            //     } else {
+            //         clearInterval(stl);
+            //     }
+            //     console.log($("#ifrm").height());
+            // }, 1);
 
             $(".menu-warp").mCustomScrollbar();
             $(".item-sub-parentname").click(function() {

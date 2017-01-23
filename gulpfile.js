@@ -12,9 +12,9 @@ gulp.task('webserver', function() {
 });
 
 
-// var jsFile = 'src/app-controllers/**/*.js'
-// gulp.watch(jsFile, function() {
-//     gulp.src(jsFile, { base: 'src' }).pipe(babel({ presets: ['es2015'] })).pipe(gulp.dest('dist'));
-// });
+var jsFile = 'src/app-controllers/**/*.js'
+gulp.watch(jsFile, function() {
+    gulp.src(jsFile, { base: 'src' }).pipe(babel({ presets: ['es2015'] })).pipe(gulp.dest('dist'));
+});
 
 gulp.task('default', ['webserver']);
